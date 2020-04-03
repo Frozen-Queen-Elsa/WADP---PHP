@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Trang đăng ký thong tin cá nhân
+-->
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h2>Sign up</h2>
+            <hr>
+            <form name="form_DK" action="Lab02_register">
+                Fullname : 
+                <input type="text" name="txtName" value="Taeyeon" required> <br>
+                Email :
+                <input type="email" name="txtMail" value="taeyeon@snsd.com" required> <br>
+                City :
+                <select name="cbCity" id="cbCity">
+                    <option value="SG">Sài Gòn</option>
+                    <option value="HN">Hà Nội</option>
+                    <option value="HP">Hải Phòng</option>
+                    <option value="HU">Huế</option>
+                    <option value="DN">Đã Nẵng</option>
+                </select> <br>
+                Gender :
+                Female <input type="radio" name="rdGender" value="Female" checked>
+                Male <input type="radio" name="rdGender" value="Male" checked> <br>
+                Birthday :
+                <input type="date" name="txtBD" value="1989-03-09"> <br>
+                Hobbies :
+                Sing <input type="checkbox" name="ckSing[]" value="Sing" checked>
+                Dance <input type="checkbox" name="ckDance[]" value="Dance" checked>
+                Shopping <input type="checkbox" name="ckShopping[]" value="Shopping"> <br>
+                Comments:
+                <textarea name="txtNote" id="txtNote" cols="30" rows="5">Nothing to say...</textarea><br>
+                <input type="submit" name="btnOK" value="Submit"/>
+                <input type="reset" name="btnReset" value="Reset"/>
+            </form>
+        </div>
+    </body>
+</html>
