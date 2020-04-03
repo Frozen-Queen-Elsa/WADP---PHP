@@ -21,6 +21,12 @@ and open the template in the editor.
             $n1=5;
             $n2=10;
             cong($n1,$n2);
+            
+            $n3=12.345;
+            cong($n1,$n3);
+            
+            $n4= "345";
+            cong($n1,$n4);
         ?>
     </body>
 </html>
