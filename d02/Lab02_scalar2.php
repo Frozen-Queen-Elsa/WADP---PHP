@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Scalar Type</title>
+        <title>Scalar Type 2</title>
     </head>
-    <body
-        <h2>Scalar Type Demo</h2>
-        <h3>Without Parameter Type Declaration</h3>
+    <body>
+        <h2>Scalar Type Demo 2</h2>
+        <h3>With Parameter Type Declaration</h3>
         <hr>
         <?php
-            function cong($x,$y){
+            function cong(int $x,int $y){
                 echo "$x + $y = " . ($x + $y) . "<br>";
             }
             
