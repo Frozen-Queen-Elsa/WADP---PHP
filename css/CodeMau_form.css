@@ -1,0 +1,203 @@
+/* ------------------------------------------- */
+
+
+/* ---CSS CodeMau_tableform và CodeMau_form--- */
+
+
+/* ------------------------------------------- */
+
+* {
+    /* Chỉnh sửa padding margin của toàn web về 0 */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* Chỉnh sửa text của nguyên web */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-image: linear-gradient(45deg, rgba(202, 106, 214, 0.651), rgba(13, 179, 41, 0.726)), url(https://images.alphacoders.com/201/thumb-1920-201591.jpg);
+    background-size: cover;
+}
+
+
+/* ------------------------- */
+
+
+/* ------ReUseable---------- */
+
+
+/* ------------------------- */
+
+
+/* ---clearfix chỉ dùng trong 1 vài trường hợp ---- */
+
+.clearfix::after {
+    /* Hủy các giá trị auto float */
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 800px;
+    border: 1px solid rgb(88, 23, 209);
+    border-radius: 10px;
+    box-shadow: 4px 5px 6px 3px violet;
+    /* box-shadow: x-y-độ mờ-độ lan-màu*/
+    margin: 10px auto;
+    background-color: rgba(208, 209, 140, 0.596)
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 35px;
+    color: rgb(0, 255, 191);
+    font-weight: 700;
+}
+
+
+/* ----------------------- */
+
+
+/* ---------Form------- */
+
+
+/* ----------------------- */
+
+.register {
+    width: 650px;
+    height: 95%;
+    border: 1px solid green;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px pink;
+    color: rgb(25, 0, 255);
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(241, 204, 236, 0.52)
+}
+
+table td {
+    padding-bottom: 6px;
+}
+
+table td:first-child {
+    text-align: right;
+    padding-right: 20px;
+    width: 220px;
+}
+
+table td:last-child {
+    color: green;
+}
+
+
+/* Chỉnh sửa size chữ của nội dung trong các ô input , select, textarea */
+
+input,
+select,
+textarea {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+
+/* Chỉnh sửa kích cỡ các phần input , select , textarea */
+
+input[type=password],
+input[type=email],
+input[type=text],
+input[type=number] {
+    width: 400px;
+    height: 25px;
+}
+
+input[type=date],
+select {
+    width: 190px;
+    height: 25px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+}
+
+input[type=submit],
+input[type=reset] {
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    margin: 10px 10px;
+    margin-right: 160px;
+    background-color: yellow;
+    color: rgb(126, 126, 235);
+    font-weight: 500;
+    transition: all 0.6s;
+    font-size: 17px;
+    padding: 2px 5px;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active,
+input[type=reset]:hover,
+input[type=reset]:active {
+    font-weight: 700;
+    background-color: rgb(126, 126, 235);
+    color: yellow;
+}
+
+
+/* ----------------------------- */
+
+
+/* --------CodeMau_form.html---- */
+
+
+/* ----------------------------- */
+
+
+/* Chỉnh margin cho trang CodeMau_form.html */
+
+.normal_form input,
+.normal_form textarea,
+.normal_form select {
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+
+
+/* Reset lại margin của 2 nút Reset và Submit */
+
+.normal_form input[type=reset] {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.normal_form input[type=submit] {
+    margin-left: 150px;
+    margin-right: 70px;
+}
+
+.normal_form p {
+    line-height: 120%;
+    font-weight: 400;
+    margin-left: 45px;
+    color: rgb(248, 0, 124)
+}
+
+.normal_form {
+    width: 400px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+    Form thông tin của lớp học mới
+-->
+<html>
+    
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <div class="container">
+            <h2>Nhập Thông Tin Lớp Học</h2>
+            <hr>
+            <form action="Lab06_ThemLop.php">
+                Mã Lớp : <input type="text" name="txtMa" id="txtMa" value="1901-M1" required><br><br>
+                Thời gian nhập học : <input type="text" name="txtTG" id="txtTG" value="09-2019" required><br><br>
+                Chương trình : <input type="text" name="txtCT" id="txtCT" value="ACCPT I17" required><br><br>
+                Học Phí : <input type="number" name="txtHP" id="txtHP" min="100" max="2000" value="1200" required><br><br>
+                <input type="submit" name="btnOK" value="Login">
+                <input type="reset" name="btnReset" value="Reset">
+            </form>
+        </div>
+    </body>
+</html>

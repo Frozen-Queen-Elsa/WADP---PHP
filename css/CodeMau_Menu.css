@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* Chỉnh sửa text của nguyên web */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-image: linear-gradient(45deg, rgba(202, 106, 214, 0.651), rgba(13, 179, 41, 0.726)), url(https://images.alphacoders.com/201/thumb-1920-201591.jpg);
+    background-size: cover;
+}
+
+
+/* --------------- */
+
+
+/* ---ReUseable--- */
+
+
+/* --------------- */
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #03f;
+    font-weight: 450;
+    transition: all 0.8s;
+}
+
+a:hover,
+a:active {
+    font-weight: 700;
+    color: rgb(255, 59, 174);
+    font-size: 27px;
+}
+
+
+/* -------------- */
+
+
+/* --Menu_Ngang-- */
+
+
+/* -------------- */
+
+.header {
+    width: 100%;
+}
+
+.menu_ngang {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* .col {
+    margin: 0;
+} */
+
+.logo {
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    padding-top: 2.2%;
+}
+
+.icon {
+    padding-top: 1.5%
+}
+
+.menu_ngang img {
+    width: 90%;
+}

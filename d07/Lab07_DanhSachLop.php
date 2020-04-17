@@ -7,18 +7,19 @@
     In danh sách các lớp học trong bảng [tbLopHoc]
 -->
 <html>
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Danh Sách Lớp</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="container">
             
             <h2>Danh sách các lớp học</h2>
-            <a href="Lab06_ThemLop.html">Thêm Lớp</a>
+            <a href="Lab07_ThemLop.html">Thêm Lớp</a>
             <hr>
-            <table class="table tab-conten ">
+            <table class="table tab-content ">
                 <thead>
                     <<tr>
                         <th>Mã Lớp</th>
@@ -39,6 +40,11 @@
                           echo "<td> $item[1] </td>";
                           echo "<td> $item[2] </td>";
                           echo "<td> $item[3] </td>";
+                          echo "<td>";
+                          echo "<a href='Lab07_XemLop.php?id=$item[0]'>Display</a> | ";
+                          echo "<a href='Lab07_SuaLop.php?id=$item[0]'>Edit</a> | ";
+                          echo "<a href='Lab07_XoaLop.php?id=$item[0]'>Remove</a>";
+                          echo "</td>";
                           echo '</tr>';
     
                         }

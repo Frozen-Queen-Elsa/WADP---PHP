@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+    Form thông tin của lớp học mới
+-->
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Thêm Lớp</title>
+        <!-- Grid.css -->
+        <link rel="stylesheet" href="../css/grid.css">
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/cc7d5b8894.js" crossorigin="anonymous"></script>
+        <!-- Font Google -->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <!-- Style.css -->        
+        <link href="../css/CodeMau_form.css" rel="stylesheet" type="text/css"/>
+         <!-- Bootstrap.css -->        
+<!--        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>-->
+    </head>
+    <body>
+        <div class="container">
+            <section>
+                <div class="register">
+                    <h2>Nhập Thông Tin Lớp Học</h2>
+                    <hr>
+                    <form class="normal_form" action="Lab07_ThemLop.php">
+                        Mã Lớp : <input type="text" name="txtMa" id="txtMa" value="1901-M1" required><br><br>
+                        Thời gian nhập học : <input type="text" name="txtTG" id="txtTG" value="09-2019" required><br><br>
+                        Chương trình : <input type="text" name="txtCT" id="txtCT" value="ACCPT I17" required><br><br>
+                        Học Phí : <input type="number" name="txtHP" id="txtHP" min="100" max="2000" value="1200" required><br><br>
+                        <input type="submit" name="btnOK" value="Login">
+                        <input type="reset" name="btnReset" value="Reset">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
