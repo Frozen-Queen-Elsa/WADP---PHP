@@ -7,7 +7,7 @@
  */
 
     $serverDB= "localhost:3306";
-    $dbName="1907DB";
+    $dbName="PHPDB";
     $username="root";
     $password="";
 
