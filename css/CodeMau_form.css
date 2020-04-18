@@ -80,7 +80,7 @@ h2 {
     color: rgb(25, 0, 255);
     margin: 20px auto;
     padding: 30px;
-    background-color: rgba(241, 204, 236, 0.52)
+    background-color: rgba(241, 204, 236, 0.52);
 }
 
 table td {
@@ -141,13 +141,14 @@ input[type=reset] {
     height: 25px;
     text-align: center;
     margin: 10px 10px;
-    margin-right: 160px;
+    margin-right: 80px;
     background-color: yellow;
     color: rgb(126, 126, 235);
     font-weight: 500;
     transition: all 0.6s;
     font-size: 17px;
     padding: 2px 5px;
+    padding-bottom: 2px;
 }
 
 input[type=submit]:hover,
