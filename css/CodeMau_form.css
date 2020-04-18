@@ -45,13 +45,13 @@ body {
 }
 
 .container {
-    width: 800px;
+    width: 80%;
     border: 1px solid rgb(88, 23, 209);
     border-radius: 10px;
     box-shadow: 4px 5px 6px 3px violet;
     /* box-shadow: x-y-độ mờ-độ lan-màu*/
     margin: 10px auto;
-    background-color: rgba(208, 209, 140, 0.596)
+    background-color: rgba(208, 209, 140, 0.596);
 }
 
 h2 {
@@ -200,4 +200,21 @@ input[type=reset]:active {
 
 .normal_form {
     width: 400px;
+}
+
+/* Link */
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #03f;
+    font-weight: 450;
+    transition: all 0.8s;
+}
+
+a:hover,
+a:active {
+    font-weight: 700;
+    color: rgb(255, 59, 174);
+    font-size: 27px;
 }
