@@ -57,9 +57,10 @@ table {
 /*    border-radius: 1em;
       box-shadow: 9px 8px 5px pink;*/
 }
-    
+     
 th {
     padding: 5px 15px;
+    text-align:left;
 }
     
    
@@ -77,19 +78,12 @@ tbody tr:hover {
     background-color: lightgreen;
 }
     
-tfoot,
-tbody td:first-child,
-tbody td:nth-child(3) {
-    text-align: center; 
-}
-tbody td:nth-child(4),
-tbody td:nth-child(2){
+
+tbody td {
     padding-left: 2%;
 }
     
-tbody td:last-child {
-    text-align: right;
-}
+
     
 td,
 th {
