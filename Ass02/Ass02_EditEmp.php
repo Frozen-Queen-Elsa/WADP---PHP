@@ -1,5 +1,5 @@
 <?php 
-    //Kiểm tra xem trang này có được chuyển từ trang [Lab07_DanhSachLop.php]
+    //Kiểm tra xem trang này có được chuyển từ trang [Ass02_Admin.php]
     if(isset($_GET["id"])==FALSE){
         //Quay về lại trang danh sách lớp
         header("location:Ass02_Admin.php");

@@ -1,0 +1,120 @@
+* {
+    /* Chỉnh sửa padding margin của toàn web về 0 */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* Chỉnh sửa text của nguyên web */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-image: linear-gradient(45deg, rgba(202, 106, 214, 0.651), rgba(13, 179, 41, 0.726)), url(https://images.alphacoders.com/201/thumb-1920-201591.jpg);
+    background-size: cover;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 35px;
+    color: rgb(0, 255, 191);
+    font-weight: 700;
+}
+
+span{
+    margin-left: 12%;
+}
+
+.clearfix::after {
+    /* Hủy các giá trị auto float */
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    border: 1px solid rgb(88, 23, 209);
+    border-radius: 10px;
+    box-shadow: 4px 5px 6px 3px violet;
+    /* box-shadow: x-y-độ mờ-độ lan-màu*/
+    margin: 10px auto;
+    background-color: rgba(208, 209, 140, 0.596);
+}
+
+table {
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+    font-size: 1.2em;
+/*    border: solid blue thin;*/
+    padding: 20px 20px 20px 20px;
+    margin: 0 auto;
+/*    border-radius: 1em;
+      box-shadow: 9px 8px 5px pink;*/
+}
+    
+th {
+    padding: 5px 15px;
+    text-align:left;
+}
+    
+   
+    
+tbody tr:nth-child(even) {
+    background-color: wheat;
+}
+    
+tbody tr:nth-child(odd) {
+    background-color: pink;
+}
+    
+tbody tr:hover {
+    color: blue;
+    background-color: lightgreen;
+}
+    
+
+tbody td {
+    padding-left: 2%;
+}
+    
+
+    
+td,
+th {
+    border: solid green thin;
+        
+}
+    
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #03f;
+    font-weight: 400;
+    transition: all 0.8s;
+}
+
+a:hover,
+a:active {
+    font-weight: 700;
+    color: rgb(255, 59, 174);
+    font-size: 27px;
+}   
+
+
+
+
+.button {
+    padding: 0.5%;
+    
+    background-color: pink;
+    color:rgb(126, 126, 235);
+    font-weight: 700;
+    font-size:20px;
+    
+}

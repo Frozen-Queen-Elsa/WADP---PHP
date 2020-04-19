@@ -1,8 +1,8 @@
 <?php
 
-    //Kiểm tra xem form điều chỉnh trang [Ass02_Admin.php]
+    //Kiểm tra xem form điều chỉnh trang [Ass03_AdminProduct.php]
     if (isset($_GET["id"]) == FALSE) {
-        header("location:Ass02_Admin.php");
+        header("location:Ass03_AdminProduct.php");
         exit();
     }
     
@@ -15,7 +15,7 @@
     
     
     //Viết lệnh update
-    $sql ="delete from tbemployee where empID = '$id' ;";
+    $sql ="delete from tbproducts where code = '$id' ;";
     
     //Thi hành lệnh truy vấn từ biến connection
     $r= mysqli_query($link, $sql);
@@ -26,7 +26,7 @@
     }
     else{
     //quay ve lai trang danh sach lop
-    header("location:Ass02_Admin.php");
+    header("location:Ass03_AdminProduct.php");
     }
     
 

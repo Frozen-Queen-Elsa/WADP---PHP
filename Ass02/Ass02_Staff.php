@@ -34,8 +34,8 @@
                         $sql="select * from tbemployee";
                         $r= mysqli_query($link, $sql);
 
-                        $a_book= mysqli_fetch_all($r);
-                        foreach ($a_book as $item) {
+                        $a_emp= mysqli_fetch_all($r);
+                        foreach ($a_emp as $item) {
                           echo '<tr>';
                           echo "<td> $item[0] </td>";
                           echo "<td> $item[2] </td>";

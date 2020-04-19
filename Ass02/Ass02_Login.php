@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <!--
     Kiểm tra tài khoản đang nhập trong trang [Ass02_Login] có hợp lệ không?
-    Bằng cách đối chiếu bộ dữ liệu nhập với các mẩu tin trong bảng [tbUser]
+    Bằng cách đối chiếu bộ dữ liệu nhập với các mẩu tin trong bảng [tbemployee]
     Nếu có, thông báo thành công. Ngược lại thông báo thất bại
 -->
 <html>

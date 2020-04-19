@@ -1,12 +1,12 @@
 <?php
-    include_once '../ThuVien/connectDB_Ass01.php';
+    include_once '../ThuVien/connectDB_phpDB.php';
     
     if (isset($_GET["btnSearch"]) == FALSE) {
             header("location:Ass01_ViewBook.php");
             exit();
     }
     
-    $min = $_GET["txtMin"];
+    $min = ($_GET["txtMin"]==NULL)?0:$_GET["txtMin"];
     $max = $_GET["txtMax"];
     
 ?>

@@ -1,5 +1,5 @@
 <?php
-    include_once '../ThuVien/connectDB_Ass01.php';
+    include_once '../ThuVien/connectDB_phpDB.php';
     
 ?>
 
@@ -18,7 +18,7 @@
         <div class="container">
             <h2>Book List</h2>
             <span>
-                <a href="Ass01_NewBook.php">Create New</a> <br><br>
+                <a href="Ass01_NewBook.php">Create New Book</a> <br><br>
             </span>
             
             <form action="Ass01_SearchBook.php">
@@ -55,7 +55,6 @@
                           echo "<td> $item[1] </td>";
                           echo "<td> $item[2] </td>";
                           echo "<td> $item[3] </td>";
-                          echo "<td>";
                           echo '</tr>';
     
                         }

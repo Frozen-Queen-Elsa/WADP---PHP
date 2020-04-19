@@ -1,3 +1,4 @@
+
 <?php
     include_once '../ThuVien/connectDB_phpDB.php';
 ?>
@@ -14,26 +15,29 @@
         <?php
         
         if (isset($_GET["btnOK"]) == FALSE) {
-            header("location:Ass01_NewBook.html");
+            header("location:Ass03_NewProduct.html");
             exit();
         }
         
-        $name = $_GET["txtName"];
-        $author = $_GET["txtAuthor"];
-        $price = $_GET[txtPrice];
         
-        $sql = "insert into tbbook(name,price,author) values('$name',$price,'$author');";
+        $name = $_GET["txtName"];
+        $price = $_GET["txtPrice"];
+        $desc = $_GET["txtDesc"];
+        
+        $sql = "INSERT INTO tbproducts(name, price, descriptions) VALUES ('$name',$price,'$desc') ; ";
        
+        
         //thuc hien lenh truy van SQL
         $r = mysqli_query($link, $sql);
         
         //kiem tra xem co dong du lieu dc tra ve tu cau linh Select SQL ?
         if ($r==TRUE) {
             //Open trang danh sách lớp học
-            header("location:Ass01_ViewBook.php");
+            header("location:Ass03_AdminProduct.php");
             exit();
         }
-        echo "<h3>Lỗi sai DB : Không thể thêm Book mới !</h3>"
+        echo "r= '$r'";
+        echo "<h3>Lỗi sai DB : Không thể thêm Product mới !</h3>";
         ?>
         
         
@@ -41,4 +45,3 @@
         
     </body>
 </html>
-
