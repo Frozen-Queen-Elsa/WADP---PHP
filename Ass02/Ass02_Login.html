@@ -13,15 +13,32 @@
             <section>
                 <h2>Login</h2>
                 <hr>
-                <form class="register" action="Ass02_Login.php" method="POST">
-                    Employee ID:
-                        <input type="text" name="txtID" value="E01" required> <br><br>
-                    Password   : 
-                        <input type="password" name="txtPass" value="abc" required> <br><br>
+                <form id="form_login" name="form_login" class="register" action="Ass02_Login.php" method="POST">
+                    Username :
+                        <input type="text" id="txtID" name="txtID" value="E03" required> <br><br>
+                    Password : 
+                        <input type="password" id="txtPass" name="txtPass" value="abc" required> <br><br>
                         <input type="submit" name="btnOK" value="Login" style="margin-left: 90px;padding-bottom: 4.5%">
                         <input type="reset" name="btnReset" value="Reset" style="padding-bottom: 4.5%">
                 </form>
             </section>
         </div>
+        <script>
+            document.getElementById("form_login").onsubmit = function () {
+                var ID = document.getElementById("txtID").value.trim();
+                var pass = document.getElementById("txtPass").value.trim();
+                if (ID.length == 0) {
+                    alert("ID không được để trống !");
+                    document.getElementById("txtID").focus();
+                    return false;
+                }
+                if (pass.length == 0) {
+                    alert("Password không được để trống !");
+                    document.getElementById("txtPass").focus();
+                    return false;
+                }
+            }
+            
+        </script>
     </body>
 </html>

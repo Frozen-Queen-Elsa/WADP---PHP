@@ -15,7 +15,7 @@
                 <div class="register">
                     <h2>Nhập Thông Tin Sách</h2>
                     <hr>
-                    <form class="normal_form" action="Ass01_NewBook.php">
+                    <form id="formnhap" class="normal_form" action="Ass01_NewBook.php">
                         BookName : <input type="text" name="txtName" id="txtName" value="Harry Potter" required><br><br>
                         Price : <input type="number" step="0.01" name="txtPrice" id="txtPrice" min="0" max="100" value="22.5" required><br><br>
                         Author : <input type="text" name="txtAuthor" id="txtAuthor"  value="J. K. Rowling" ><br><br>
@@ -27,5 +27,24 @@
                 </div>
             </section>
         </div>
+        <script>
+            document.getElementById("formnhap").onsubmit = function () {
+
+                var name = document.getElementById("txtName").value;
+                var author = document.getElementById("txtAuthor").value;
+                if (name.trim().length == 0) {
+                    alert("Tên sách không được để trống");
+                    document.getElementById("txtName").focus();
+                    return false;
+                }
+                if (author.trim().length == 0) {
+                    alert("Tên tác giả không được để trống");
+                    document.getElementById("txtAuthor").focus();
+                    return false;
+                }
+            }
+
+        </script>
     </body>
+    
 </html>

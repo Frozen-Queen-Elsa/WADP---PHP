@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include_once '../ThuVien/connectDB_phpDB.php';
     
 ?>
@@ -17,7 +18,7 @@
     </head>
     <body>
         <?php
-        //kiem tra trang [L06_login.html] da duoc chay chua
+        //kiem tra trang [Ass03_login.html] da duoc chay chua
         if (isset($_POST["btnOK"]) == FALSE) {
             header("location:Ass03_Login.html");
             exit();
@@ -31,8 +32,10 @@
        
         //kiem tra xem co dong du lieu dc tra ve tu cau linh Select SQL ?
         if (mysqli_num_rows($r) > 0) {
-            $emp = mysqli_fetch_row($r);
-            if($emp[4]==1){
+            $product = mysqli_fetch_row($r);
+            $_SESSION ["id"]=$product[0];
+            $_SESSION ["role"]=$product[2];
+            if($product[2]==1){
                 header("location:Ass03_ViewProduct.php");
             }
             else{
@@ -40,6 +43,8 @@
             }
         } else {
             echo "<h3 style='color:red'>Tài khoản đăng nhập không hợp lệ . <br>Xin vui lòng nhập lại!</h3>";
+            unset($_SESSION ["id"]);
+            unset($_SESSION ["role"]);
             
         }
         ?>

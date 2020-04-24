@@ -1,6 +1,15 @@
 <?php
+    session_start();
     include_once '../ThuVien/connectDB_phpDB.php';
-    
+    if(isset($_SESSION["id"])==FALSE){
+        header("location:Ass02_Login.html");
+        exit();
+    }
+    if($_SESSION["role"]!=1){
+        header("location:Ass02_Login.html");
+        exit();
+    }
+  
 ?>
 
 <!DOCTYPE html>

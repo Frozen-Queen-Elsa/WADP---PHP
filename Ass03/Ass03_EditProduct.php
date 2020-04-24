@@ -53,8 +53,8 @@ and open the template in the editor.
                     <h2>Thay đổi thông tin Product</h2>
                     <hr>
 
-                    <form class="normal_form" action="Ass03_EditProduct_saveDB.php">
-                        Product ID : <input type="text" name="txtID" id="txtID" value="<?php echo $emp[0]?>" required><br><br>
+                    <form id="formnhap" class="normal_form" action="Ass03_EditProduct_saveDB.php">
+                        Product ID : <input type="text" name="txtID" id="txtID" value="<?php echo $emp[0]?>" readonly><br><br>
                         
                         Product Name : <input type="text" name="txtName" id="txtName"  value="<?php echo $emp[1]?>" required><br><br> 
                         Price : <input type="number" step="0.01" name="txtPrice" id="txtPrice"  min=10000 max =200000 value=<?php echo $emp[2]?> ><br><br>
@@ -70,6 +70,23 @@ and open the template in the editor.
                     
                 </div>
             </section>
-        </div>>
+        </div>
+        <script>
+            document.getElementById("formnhap").onsubmit = function () {
+
+                
+                var name = document.getElementById("txtName").value;
+                
+                
+                if (name.trim().length == 0) {
+                    alert("Tên Product không được để trống");
+                    document.getElementById("txtName").focus();
+                    return false;
+                }
+                
+                
+            }
+
+        </script>
     </body>
 </html>
